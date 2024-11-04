@@ -11,7 +11,6 @@ body {
   font-family: "Roboto Mono", monospace;
   background-color: #1B152C;
   color: white;
-  /* background-image: url(../img/fondos/fondo-vscode.png); */
   background-size: cover; /* Cubrir toda la ventana */
   background-position: center; /* Centrar la imagen */
   background-repeat: no-repeat; /* Evitar que la imagen se repita */
@@ -27,6 +26,8 @@ body {
   position: sticky;
   text-align: right;
   position: sticky;
+  top: 0;
+  background-color: rgba(27, 21, 44, 0.5);
 }
 
 .nav__link {
