@@ -1,0 +1,74 @@
+/* HEADER */
+
+html{
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Roboto Mono", monospace;
+    background-color: #1B152C;
+    color: white;
+    /* background-image: url(../img/fondos/fondo-vscode.png); */
+    background-size: cover; /* Cubrir toda la ventana */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+}
+
+.layout{
+    height: 100%;
+}
+
+.layout__nav{
+    width: 100%;
+    justify-content: space-between;
+    position: sticky;   
+    text-align: right; 
+    position: sticky;
+}
+
+.nav__link{
+    display: inline-block;
+    border: none;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    html {
+        font-size: 8px; /* Reducir tamaño de fuente en móviles */
+    }
+
+    body {
+        font-size: 1.4rem; /* Ajustar el tamaño de fuente */
+    }
+
+    .nav__link {
+        padding: 10px 20px; /* Reducir el padding */
+        font-size: 3rem; /* Ajustar el tamaño de fuente */
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    html {
+        font-size: 9px; /* Tamaño de fuente intermedio */
+    }
+
+    body {
+        font-size: 1.5rem; /* Ajustar el tamaño de fuente */
+    }
+
+    .nav__link {
+        padding: 12px 30px; /* Ajustar el padding */
+        font-size: 4rem; /* Ajustar el tamaño de fuente */
+    }
+}
+
+

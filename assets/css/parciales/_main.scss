@@ -1,0 +1,128 @@
+/* MAIN  */
+
+// .layout__main{
+//     // margin-left: 20rem;
+//     // margin-top: 20rem;
+// }
+
+.main_presentation{
+    display: flex;
+    justify-content: space-between; /* Distribuir el espacio entre los elementos */
+    align-items: center; /* Alinear verticalmente al centro */
+    padding-left: 10rem;
+}
+
+.presentation__text{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-items: center;
+    line-height: 0%;
+    gap: 8rem;
+    padding-top: 10rem;
+}
+
+.main__title{
+    padding-top: 10rem;
+}
+
+.presentation__img{
+    padding-right: 20rem;
+    padding-top: 20rem;
+}
+
+.main__skills {
+    display: flex;
+    flex-direction: column; /* Cambia a columna */
+    align-items: center;    /* Centra los elementos */
+    justify-content: center; /* Centra verticalmente */
+    padding-top: 23rem;
+    
+}
+
+.skills__arrow{
+    font-size: 6rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    padding-bottom: 10rem;
+}
+
+.skills__arrow:hover{
+    transform: scale(1.2);
+}
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y los íconos */
+    font-size: 3.5rem; /* Ajusta el tamaño de la fuente según necesites */
+}
+
+.skills__icons{
+    background-color: #333333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills__fa {
+    font-size: 10rem; /* Tamaño de los íconos */
+    margin: 4rem; /* Espacio entre los íconos */
+    justify-content: space-between;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.fa-html5:hover{
+    color: #FC4F13;
+    transform: scale(1.2);
+}
+
+.fa-css3-alt:hover{
+    color: #36ADDC;
+    transform: scale(1.2);
+}
+
+.fa-js:hover{
+    color: #F7E025;
+    transform: scale(1.2);
+}
+
+.fa-sass:hover{
+    color: #CE6B9C;
+    transform: scale(1.2);
+}
+
+.fa-bootstrap:hover{
+    color: #7618F6;
+    transform: scale(1.2);
+}
+
+.fa-git:hover{
+    color: #F2563B;
+    transform: scale(1.2);
+}
+
+.fa-github:hover{
+    color: black;
+    transform: scale(1.2);
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+   .main_presentation{
+    flex-direction: column;
+   }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .main_presentation{
+        flex-direction: column;
+       }
+}
