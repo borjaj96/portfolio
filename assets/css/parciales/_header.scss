@@ -33,11 +33,38 @@ body{
     display: inline-block;
     border: none;
     text-transform: uppercase;
-    padding: 15px 50px;
+    padding: 10px 15px;
     text-decoration: none;
     color: white;
     font-size: 2rem;
+    transition: all 300ms ease;
 }
+
+.nav1:hover{
+    color: #25E572;
+}
+
+.nav2:hover{
+    color: #FF4D4D;
+}
+
+.nav3:hover{
+    color: #FDC025;
+}
+
+.nav4:hover{
+    color: #2074EF;
+}
+
+.nav5:hover{
+    color: #FC4F13;
+}
+
+.nav6:hover{
+    color: #C586C0;
+}
+
+
 
 /* Pantallas pequeñas (móviles) */
 @media (max-width: 600px) {

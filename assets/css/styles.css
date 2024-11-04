@@ -33,10 +33,35 @@ body {
   display: inline-block;
   border: none;
   text-transform: uppercase;
-  padding: 15px 50px;
+  padding: 10px 15px;
   text-decoration: none;
   color: white;
   font-size: 2rem;
+  transition: all 300ms ease;
+}
+
+.nav1:hover {
+  color: #25E572;
+}
+
+.nav2:hover {
+  color: #FF4D4D;
+}
+
+.nav3:hover {
+  color: #FDC025;
+}
+
+.nav4:hover {
+  color: #2074EF;
+}
+
+.nav5:hover {
+  color: #FC4F13;
+}
+
+.nav6:hover {
+  color: #C586C0;
 }
 
 /* Pantallas pequeñas (móviles) */
@@ -113,7 +138,8 @@ body {
 }
 
 .skills__arrow:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  color: #F7E025;
 }
 
 .skills__title {
@@ -171,6 +197,20 @@ body {
 .fa-github:hover {
   color: black;
   transform: scale(1.2);
+}
+
+.main__grades {
+  display: flex;
+  flex-direction: column; /* Cambia a columna */
+  align-items: center; /* Centra los elementos */
+  justify-content: center; /* Centra verticalmente */
+  padding-top: 10rem;
+}
+
+.grades__title {
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el título y los íconos */
+  font-size: 3.5rem; /* Ajusta el tamaño de la fuente según necesites */
 }
 
 /* Pantallas pequeñas (móviles) */

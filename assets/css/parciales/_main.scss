@@ -53,7 +53,8 @@
 }
 
 .skills__arrow:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
+    color: #F7E025;
 }
 
 .skills__title {
@@ -112,6 +113,30 @@
     color: black;
     transform: scale(1.2);
 }
+
+
+.main__grades{
+    display: flex;
+    flex-direction: column; /* Cambia a columna */
+    align-items: center;    /* Centra los elementos */
+    justify-content: center; /* Centra verticalmente */
+    padding-top: 10rem;
+}
+
+.grades__title{
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y los íconos */
+    font-size: 3.5rem; /* Ajusta el tamaño de la fuente según necesites */
+}
+
+
+
+
+
+
+
+
+
 
 /* Pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
