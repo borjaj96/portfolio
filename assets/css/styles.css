@@ -115,7 +115,6 @@ body {
   flex-direction: column;
   align-items: left;
   justify-items: center;
-  line-height: 0%;
   gap: 8rem;
   padding-top: 10rem;
 }
@@ -129,6 +128,49 @@ body {
   padding-top: 20rem;
 }
 
+.buttons__container-top {
+  display: flex; /* Activamos el contenedor flex */
+  justify-content: center; /* Centra el botón horizontalmente */
+  align-items: center; /* Centra el botón verticalmente */
+  padding-top: 3rem; /* Asegura que el contenedor tenga altura completa para centrar verticalmente */
+}
+
+.buttons__btn2 {
+  position: absolute;
+  background-color: #2A2A49;
+  border: solid 1px white;
+  color: white;
+  border-radius: 10rem;
+  width: 22rem;
+  height: 7rem;
+  cursor: pointer;
+  font-weight: 600;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.buttons__btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #393963;
+  border-radius: 10rem;
+  z-index: -1;
+  transition: all 1s linear;
+}
+
+.buttons__btn2:hover::before {
+  transform: scaleX(1.3) scaleY(1.5);
+  opacity: 0;
+}
+
+/* SKILLS */
 .main__skills {
   display: flex;
   flex-direction: column; /* Cambia a columna */
@@ -186,6 +228,11 @@ body {
   transform: scale(1.2);
 }
 
+.fa-php:hover {
+  color: #7B7FB5;
+  transform: scale(1.2);
+}
+
 .fa-sass:hover {
   color: #CE6B9C;
   transform: scale(1.2);
@@ -224,16 +271,31 @@ body {
 @media (max-width: 600px) {
   .main_presentation {
     flex-direction: column;
+    padding-left: 0;
   }
   .presentation__text {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 0;
+  }
+  .presentation__img {
+    padding-right: 0;
+    padding-top: 10rem;
+  }
+  .presentation__img > img {
+    width: 30rem;
+  }
+  .buttons__container-top {
+    height: 20rem; /* Asegura que el contenedor tenga altura completa para centrar verticalmente */
+  }
+  .skills__icons {
+    flex-wrap: wrap; /* Permite que los íconos se ajusten a varias filas */
+    justify-content: space-between; /* Asegura que los íconos se distribuyan en filas */
   }
   .skills__fa {
-    font-size: 3rem; /* Tamaño de los íconos */
-    margin-top: 0.5rem; /* Espacio entre los íconos */
-    margin-bottom: 0.5rem;
-    margin-left: 2px;
-    margin-right: 2px;
+    flex: 0 0 15%; /* En móviles, los íconos ocupan el 45% de ancho */
+    margin: 2rem;
+    font-size: 8rem;
   }
 }
 /* Pantallas medianas (tabletas) */
@@ -246,6 +308,9 @@ body {
   }
   .presentation__text {
     font-size: 3rem;
+  }
+  .buttons__container-top {
+    padding-top: 10rem;
   }
   .main__skills {
     width: 100%;
@@ -263,6 +328,9 @@ body {
   .skills__fa {
     font-size: 8rem; /* Tamaño de los íconos */
     margin: 2rem; /* Espacio entre los íconos */
+  }
+  .buttons__container-top {
+    padding-top: 10rem;
   }
 }
 /*FOOTER*//*# sourceMappingURL=styles.css.map */
