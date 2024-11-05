@@ -236,6 +236,15 @@
     //width: 100%;
 }
 
+.project__card{
+    position: relative;
+    width: 50rem;
+    height: 25rem;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
 .project__card > img{
     width: 50rem;
     border-radius: 3rem;
@@ -244,12 +253,87 @@
     transition: all 300ms ease-in-out;
 }
 
-.project__card > img:hover{
-    box-shadow: 0px 0px 8px white;
-    filter: none;
+// .project__card > img:hover{
+//     box-shadow: 0px 0px 8px white;
+//     filter: none;
+// }
+
+.card__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms linear;
+    overflow: hidden;
 }
 
+.card__overlay{
+    position: absolute;
+    top: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #4953BA;
+    color: white;
+    margin-top: 0;
+    padding: 3rem;
+    border-radius: 3rem;
+    transform: translateX(-50rem);
+    transition: all 300ms linear;
+    overflow: hidden;
+}
 
+.project__card:hover > .card__overlay{
+    transform: translateX(0);
+}
+
+.overlay__title{
+    margin-bottom: 4rem;
+}
+
+.overlay__description{
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.overlay__tools{
+    font-size: 3.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.tools__html{
+    color: #FC4F13;
+}
+
+.tools__css{
+    color: #36ADDC;
+}
+
+.tools__sass{
+    color: #CE6B9C;
+}
+
+.tools__bootstrap{
+    color: #7618F6;
+}
+
+.project__card > .card__overlay{
+    background-color: rgba(6, 5, 8, 0.5);
+    height: 100%;
+    position: relative;
+    transform: translateY(50rem);
+}
+
+.project__card:hover > .card__overlay{
+    transform: translateY(0.1rem);
+}
+
+.project__card:hover > card__img{
+    transform: translateY(-25rem);
+}
 
 /* Pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
