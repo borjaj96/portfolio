@@ -36,17 +36,18 @@
     padding-top: 20rem;
 }
 
-.buttons__container-top{
+.main__button-top{
     display: flex;                /* Activamos el contenedor flex */
     justify-content: center;      /* Centra el botón horizontalmente */
     align-items: center;          /* Centra el botón verticalmente */
     padding-top: 3rem;                /* Asegura que el contenedor tenga altura completa para centrar verticalmente */
 }
 
-.buttons__btn2 {
+.button__btn2 {
     position: absolute;
     background-color: #2A2A49;
-    border: solid 1px white;
+    //border: solid 1px white;
+    box-shadow: 0px 0px 8px white;
     color: white;
     border-radius: 10rem;
     width: 22rem;
@@ -58,9 +59,10 @@
     align-items: center;    
     justify-content: center;
     text-align: center;
+    //z-index: -1;
 }
 
-.buttons__btn2::before{
+.button__btn2::before{
     content: "";
     position: absolute;
     top: 0;
@@ -73,7 +75,7 @@
     transition: all 1s linear;
 }
 
-.buttons__btn2:hover::before{
+.button__btn2:hover::before{
     transform: scaleX(1.3) scaleY(1.5);
     opacity: 0;
 }
@@ -108,7 +110,7 @@
 }
 
 .skills__icons{
-    background-color: #333333;
+    background-color: rgba(54, 42, 87, 0.5);
     width: 100%;
     display: flex;
     align-items: center;
@@ -163,6 +165,7 @@
     transform: scale(1.2);
 }
 
+/* FORMACION */
 
 .main__grades{
     display: flex;
@@ -178,12 +181,73 @@
     font-size: 3.5rem; /* Ajusta el tamaño de la fuente según necesites */
 }
 
+.grades__courses{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
 
+.courses__course{
+    background-color: rgba(54, 42, 87, 0.5);
+    padding: 2rem;
+    border-radius: 3rem;
+    gap: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    height: 17rem;
+}
 
+.courses__course:hover{
+    box-shadow: 0px 0px 8px white;
+}
 
+.course__title{
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
 
+.course__description{
+    margin-top: 2rem;
+}
 
+/* PROYECTOS */
 
+.main__projects{
+    padding-top: 10rem;
+    width: 100%;
+}
+
+.projects__title{
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y los íconos */
+    font-size: 3.5rem; /* Ajusta el tamaño de la fuente según necesites */
+}
+
+.projects__project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5rem;
+    //width: 100%;
+}
+
+.project__card > img{
+    width: 50rem;
+    border-radius: 3rem;
+    //filter: opacity(30%);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.project__card > img:hover{
+    box-shadow: 0px 0px 8px white;
+    filter: none;
+}
 
 
 
@@ -209,7 +273,7 @@
         width: 30rem;
    }
 
-   .buttons__container-top{
+   .main__button-top{
         height: 20rem;                /* Asegura que el contenedor tenga altura completa para centrar verticalmente */
     }
 
@@ -223,6 +287,20 @@
         margin: 2rem;
         font-size: 8rem;
     }
+
+    /* FORMACION */
+
+    .grades__courses{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses__course{
+        width: 80%;
+        height: 19rem;
+    }
+        
+    
 }
 
 /* Pantallas medianas (tabletas) */
@@ -238,7 +316,7 @@
         font-size: 3rem;
     }
 
-    .buttons__container-top{
+    .main__button-top{
         padding-top: 10rem;
     }
 
@@ -264,7 +342,16 @@
   
     }
 
-    .buttons__container-top{
+    .main__button-top{
         padding-top: 10rem;
+    }
+
+    .grades__courses{
+        width: 95%;
+    }
+
+    .courses__course{
+        width: 100%;
+        height: 25rem;
     }
 }
