@@ -228,6 +228,13 @@ body {
   .presentation__text {
     font-size: 2rem;
   }
+  .skills__fa {
+    font-size: 3rem; /* Tamaño de los íconos */
+    margin-top: 0.5rem; /* Espacio entre los íconos */
+    margin-bottom: 0.5rem;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 /* Pantallas medianas (tabletas) */
 @media (min-width: 601px) and (max-width: 900px) {
