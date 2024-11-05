@@ -143,11 +143,45 @@
    .main_presentation{
     flex-direction: column;
    }
+
+   .presentation__text{
+    font-size: 2rem;
+   }
 }
 
 /* Pantallas medianas (tabletas) */
 @media (min-width: 601px) and (max-width: 900px) {
+    .layout{
+        width: 100%;
+    }
     .main_presentation{
         flex-direction: column;
-       }
+    }
+
+    .presentation__text{
+        font-size: 3rem;
+    }
+
+    .main__skills{
+        width: 100%;
+    }
+
+    .skills__fa {
+        font-size: 8rem; /* Tamaño de los íconos */
+        margin: 1rem; /* Espacio entre los íconos */
+  
+    }
+}
+
+/* Pantallas grandes (pc pequeño) */
+@media (min-width: 901px) and (max-width: 1199px) {
+    .presentation__text{
+        font-size: 2rem;
+    }
+
+    .skills__fa {
+        font-size: 8rem; /* Tamaño de los íconos */
+        margin: 2rem; /* Espacio entre los íconos */
+  
+    }
 }

@@ -81,6 +81,10 @@ body{
         padding: 10px 20px; /* Reducir el padding */
         font-size: 3rem; /* Ajustar el tamaño de fuente */
     }
+
+    .layout__nav{
+        display: none;
+    }
 }
 
 /* Pantallas medianas (tabletas) */
@@ -91,6 +95,10 @@ body{
 
     body {
         font-size: 1.5rem; /* Ajustar el tamaño de fuente */
+    }
+
+    .layout__nav{
+        display: none;
     }
 
     .nav__link {
