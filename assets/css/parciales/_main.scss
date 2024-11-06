@@ -43,7 +43,7 @@
     padding-top: 3rem;                /* Asegura que el contenedor tenga altura completa para centrar verticalmente */
 }
 
-.button__btn2 {
+.button__btn1{
     position: absolute;
     background-color: #2A2A49;
     //border: solid 1px white;
@@ -62,7 +62,7 @@
     //z-index: -1;
 }
 
-.button__btn2::before{
+.button__btn1::before{
     content: "";
     position: absolute;
     top: 0;
@@ -75,7 +75,7 @@
     transition: all 1s linear;
 }
 
-.button__btn2:hover::before{
+.button__btn1:hover::before{
     transform: scaleX(1.3) scaleY(1.5);
     opacity: 0;
 }
@@ -165,6 +165,11 @@
     transform: scale(1.2);
 }
 
+.fa-database:hover{
+    color: #087792;
+    transform: scale(1.2);
+}
+
 /* FORMACION */
 
 .main__grades{
@@ -186,7 +191,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 7.5rem;
     
 }
 
@@ -195,9 +200,10 @@
     padding: 2rem;
     border-radius: 3rem;
     gap: 2rem;
+    width: 50rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
-    height: 17rem;
+    height: 20rem;
 }
 
 .courses__course:hover{
@@ -253,11 +259,6 @@
     transition: all 300ms ease-in-out;
 }
 
-// .project__card > img:hover{
-//     box-shadow: 0px 0px 8px white;
-//     filter: none;
-// }
-
 .card__img{
     position: absolute;
     width: 100%;
@@ -304,6 +305,10 @@
     transition: all 300ms ease-in-out;
 }
 
+.tools__php{
+    color: #7B7FB5;
+}
+
 .tools__html{
     color: #FC4F13;
 }
@@ -320,8 +325,13 @@
     color: #7618F6;
 }
 
+.tools__database{
+    color: #087792;
+}
+
 .project__card > .card__overlay{
-    background-color: rgba(6, 5, 8, 0.5);
+    background-color: rgba(20, 20, 20, 0.945);
+    //background-color: #281F42;
     height: 100%;
     position: relative;
     transform: translateY(50rem);
@@ -334,6 +344,87 @@
 .project__card:hover > card__img{
     transform: translateY(-25rem);
 }
+
+
+/* CV */
+
+.main__cv{
+    padding-top: 2rem;
+    width: 100%;
+    background-color: #281F42;
+    margin-top: 8rem;
+    padding-bottom: 10rem;
+}
+
+.cv__title{
+    text-align: center;
+    margin-bottom: 20px; /* Espacio entre el título y los íconos */
+    font-size: 3.5rem; /* Ajusta el tamaño de la fuente según necesites */
+    padding-bottom: 10rem;
+}
+
+.cv__description{
+    text-align: center;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+}
+
+.main__button-bottom{
+    display: flex;                /* Activamos el contenedor flex */
+    justify-content: center;      /* Centra el botón horizontalmente */
+    align-items: center;          /* Centra el botón verticalmente */
+    padding-top: 3rem;                /* Asegura que el contenedor tenga altura completa para centrar verticalmente */
+}
+
+.button__btn2 {
+    position: absolute;
+    background-color: #2A2A49;
+    //border: solid 1px white;
+    box-shadow: 0px 0px 8px white;
+    color: white;
+    border-radius: 10rem;
+    width: 22rem;
+    height: 7rem;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    display: flex;   
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    //z-index: -1;
+    transition: all 1s linear;
+}
+
+.button__btn2:hover{
+    color: yellow;
+    box-shadow: 0px 0px 8px yellow;
+}
+
+// .button__btn2::before{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #393963;
+//     border-radius: 10rem;
+//     z-index: -1;
+//     transition: all 1s linear;
+// }
+
+// .button__btn2:hover::before{
+//     transform: scaleX(1.3) scaleY(1.5);
+//     opacity: 0;
+// }
+
+
+
+
+
+
+
 
 /* Pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
@@ -381,10 +472,21 @@
 
     .courses__course{
         width: 80%;
-        height: 19rem;
+        height: 20rem;
     }
         
+    /* PROYECTOS */
+
+    .projects__project{
+        flex-direction: column;
+        align-items: center;
+    }
     
+    .project__card{
+        width: 80%;
+        gap: 2rem;
+        //height: 20rem;
+    }
 }
 
 /* Pantallas medianas (tabletas) */
@@ -411,6 +513,20 @@
     .skills__fa {
         font-size: 8rem; /* Tamaño de los íconos */
         margin: 1rem; /* Espacio entre los íconos */
+    }
+
+    /* FORMACION */
+    .grades__courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .courses__course{
+        width: 90%;
+        height: 19rem;
+        align-items: center;
     }
 }
 
@@ -439,3 +555,8 @@
         height: 25rem;
     }
 }
+
+@media (min-width: 1200px) {
+    /* Estilos para pantallas de al menos 1200px de ancho */
+    
+  }
