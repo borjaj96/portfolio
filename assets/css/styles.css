@@ -447,7 +447,7 @@ body {
   transform: translateY(-25rem);
 }
 
-/* CV */
+/* CONTACTO */
 .main__contact {
   padding-top: 2rem;
   width: 100%;
@@ -684,7 +684,7 @@ body {
     width: 100%;
   }
   .courses__course {
-    width: 90%;
+    width: 70%;
     height: 19rem;
     align-items: center;
     text-align: center;
@@ -709,34 +709,6 @@ body {
   }
   .main__button-top {
     padding-top: 10rem;
-  }
-  .grades__courses {
-    width: 95%;
-  }
-  .courses__course {
-    width: 100%;
-    height: 25rem;
-  }
-  /* FORMACION */
-  .grades__courses {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .courses__course {
-    width: 90%;
-    height: 19rem;
-    align-items: center;
-    text-align: center;
-  }
-  /* PROYECTOS */
-  .projects__project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
   }
 }
 /*FOOTER*/
