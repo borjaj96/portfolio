@@ -32,7 +32,7 @@
 }
 
 .presentation__img{
-    padding-right: 20rem;
+    padding-right: 10rem;
     padding-top: 20rem;
 }
 
@@ -270,7 +270,7 @@
 .card__overlay{
     position: absolute;
     top: 100;
-    width: 50rem;
+    width: 100%;
     height: 25rem;
     display: flex;
     flex-direction: column;
@@ -380,7 +380,7 @@
     width: 50rem;
     display: flex;
     flex-direction: row;
-    gap: 10rem;
+    gap: 7rem;
 }
 
 /* EFECTO BOTON */
@@ -447,7 +447,11 @@
 
 
 
-
+/*###############################################################################*/
+/*###############################################################################*/
+/*########---------RESPONSIVE---------########*/
+/*###############################################################################*/
+/*###############################################################################*/
 
 
 
@@ -512,6 +516,26 @@
         gap: 2rem;
         //height: 20rem;
     }
+
+    /* CONTACTO */
+
+    .main__contact{
+        padding-bottom: 2rem;
+    }
+    
+    .contact__title{
+        padding-bottom: 0;
+    }
+
+    .buttons__button{
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+    }
+
+    .contact-email{
+       padding-top: 23rem;
+    }
 }
 
 /* Pantallas medianas (tabletas) */
@@ -519,12 +543,28 @@
     .layout{
         width: 100%;
     }
+
+    .main__title{
+        text-align: center;
+        padding-top: 10rem;
+    }
+
+    .main__description{
+        text-align: center;
+    }
+
     .main_presentation{
         flex-direction: column;
+        padding-left: 0;
     }
 
     .presentation__text{
         font-size: 3rem;
+    }
+
+    .presentation__img{
+        
+        padding-right: 0;
     }
 
     .main__button-top{
@@ -553,6 +593,21 @@
         height: 19rem;
         align-items: center;
     }
+
+    /* PROYECTOS */
+    .projects__project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /*CONTACTO */
+    .main__contact{
+        padding-top: 3rem;
+    }
+   
 }
 
 /* Pantallas grandes (pc pequeño) */
@@ -579,9 +634,78 @@
         width: 100%;
         height: 25rem;
     }
+
+    /* FORMACION */
+    .grades__courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .courses__course{
+        width: 90%;
+        height: 19rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* PROYECTOS */
+    .projects__project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
     /* Estilos para pantallas de al menos 1200px de ancho */
-    
+    .presentation__text{
+        font-size: 2rem;
+    }
+
+    .skills__fa {
+        font-size: 8rem; /* Tamaño de los íconos */
+        margin: 2rem; /* Espacio entre los íconos */
+  
+    }
+
+    .main__button-top{
+        padding-top: 10rem;
+    }
+
+    .grades__courses{
+        width: 95%;
+    }
+
+    .courses__course{
+        width: 100%;
+        height: 25rem;
+    }
+
+    /* FORMACION */
+    .grades__courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .courses__course{
+        width: 90%;
+        height: 19rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* PROYECTOS */
+    .projects__project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
   }
