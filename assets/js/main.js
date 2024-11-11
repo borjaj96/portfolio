@@ -7,6 +7,8 @@ window.addEventListener("load", () =>{
     let wordSart = 0;
     let wordEnd = 1;
 
+
+    //AMINACIÓN TEXTO INICIO
     function write(){
 
         setInterval(() => {
@@ -15,9 +17,9 @@ window.addEventListener("load", () =>{
 
             wordEnd++;
 
-            if(wordEnd > text.length){
-                wordEnd = 1;
-            }
+            // if(wordEnd > text.length){
+            //     wordEnd = 1;
+            // }
 
            
 
