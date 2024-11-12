@@ -17,15 +17,13 @@ window.addEventListener("load", () =>{
 
             wordEnd++;
 
+            //ANIMACION INFINITA
             // if(wordEnd > text.length){
             //     wordEnd = 1;
             // }
 
-           
-
         }, 150);
     };
-
 
     write();
 });
